@@ -3,8 +3,14 @@
 @import url(./ui.css);
 @import url(./utilities.css);
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
 }
