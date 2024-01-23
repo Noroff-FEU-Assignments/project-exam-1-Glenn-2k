@@ -8,7 +8,12 @@
     display: none;
   }
 
-  .header-logo {
-    flex: none;
+  .subcontainer {
+    grid-template-columns: 50px 1fr 50px !important;
+  }
+
+  .hamburger {
+    display: block !important;
+    grid-column: 3;
   }
 }
