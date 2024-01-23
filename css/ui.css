@@ -10,11 +10,13 @@ header {
 
 .header-logo {
   max-width: 170px;
+  transform: translateY(15%);
+  margin: auto;
 }
 
 .nav-logo {
-  font-family: rochester, Arial, Helvetica, sans-serif;
-  font-size: 96px;
+  font-family: "Rochester", Arial, Helvetica, sans-serif;
+  font-size: 4.5rem;
 }
 
 li {
@@ -30,19 +32,15 @@ a {
   margin: auto;
 }
 
-.container {
-  width: 1600px;
-}
-
 .subcontainer {
   width: 85%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
-  width: 100%;
-  min-height: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -50,5 +48,15 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  column-gap: 18px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-logo,
+.header-logo,
+.navbar {
+  flex: 1;
 }
