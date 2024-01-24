@@ -4,9 +4,6 @@
   .nav-logo {
     display: none;
   }
-  .nav-item {
-    display: none;
-  }
 
   .subcontainer {
     grid-template-columns: 50px 1fr 50px !important;
@@ -15,5 +12,33 @@
   .hamburger {
     display: block !important;
     grid-column: 3;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 20px 0;
+    background-color: var(--bg-header-colour);
+  }
+
+  .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .nav-item 1 {
+    margin-top: 20px;
+  }
+
+  .hidden {
+    display: none;
   }
 }

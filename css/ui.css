@@ -65,3 +65,7 @@ a {
   grid-column: 2;
   justify-self: center;
 }
+
+body {
+  background-color: var(--bg-main-colour);
+}
