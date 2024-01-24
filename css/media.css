@@ -6,11 +6,11 @@
   }
 
   .subcontainer {
-    grid-template-columns: 50px 1fr 50px !important;
+    grid-template-columns: 50px 1fr 50px;
   }
 
   .hamburger {
-    display: block !important;
+    display: block;
     grid-column: 3;
   }
 
@@ -28,13 +28,24 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 130px;
+    top: 120px;
     width: 100%;
     margin: auto;
     padding: 0;
   }
 
-  .nav-item 1 {
-    margin-top: 20px;
+  .top {
+    margin-top: 70px;
+  }
+
+  .header-logo {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 897px) {
+  .nav-menu {
+    display: flex;
   }
 }
