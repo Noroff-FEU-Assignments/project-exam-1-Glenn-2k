@@ -1,6 +1,8 @@
 /* Media Queries goes here  */
 
 @media (max-width: 896px) {
+  /* HEADER AND NAV */
+
   .nav-logo {
     display: none;
   }
@@ -45,6 +47,8 @@
 }
 
 @media (min-width: 897px) {
+  /* HEADER AND NAV */
+
   .nav-menu {
     display: flex;
   }
