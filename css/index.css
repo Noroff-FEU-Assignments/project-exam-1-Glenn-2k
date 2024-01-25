@@ -2,15 +2,3 @@
 @import url(./ui.css);
 @import url(./utilities.css);
 @import url(./media.css);
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  text-decoration: none;
-}
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand", Arial, Helvetica, sans-serif;
-}

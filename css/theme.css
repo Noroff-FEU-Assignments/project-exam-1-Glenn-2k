@@ -2,6 +2,30 @@
 
 :root {
   --bg-main-colour: #e6dfcc;
+  --bg-secondary-colour: #eae3cf;
   --bg-header-colour: #6c8474;
   --button-orange: #ba6047;
+}
+
+/* CSS RESETS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+/* GLOBAL STYLES */
+
+body {
+  background-color: var(--bg-main-colour);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }

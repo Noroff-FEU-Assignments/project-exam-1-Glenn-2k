@@ -72,13 +72,6 @@ a {
   display: none;
 }
 
-body {
-  background-color: var(--bg-main-colour);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 /* FOOTER */
 
 footer {
@@ -105,3 +98,7 @@ footer {
   height: auto;
   padding: 0 5px 0 5px;
 }
+
+/* MAIN PAGE */
+
+/* CAROUSEL */
