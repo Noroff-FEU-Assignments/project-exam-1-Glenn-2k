@@ -103,18 +103,71 @@ footer {
 
 /* CAROUSEL & CARD */
 
+main {
+  margin-top: 250px;
+}
+
 .carouselCard {
   width: 280px;
+  max-height: 390px;
   overflow: hidden;
   border: 1px solid var(--bg-main-colour);
+  margin: 0 15px;
+  border-radius: 0 0 8px 8px;
 }
 
 .carouselCard img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
 .carouselCardContent {
   padding: 15px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.carouselButton {
+  color: var(--button-orange);
+  font-weight: 600;
+  padding: 8px;
+  align-self: center;
+  border: 2px dashed var(--button-orange);
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.carouselCardText {
+  color: #6c6758;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.carouselWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.smallHeadingCarousel {
+  align-self: center;
+  font-family: var(--small-heading-font);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.carouselSection {
+  margin: 0 120px;
+}
+
+.arrows {
+  width: 55px;
+  height: auto;
+}
+
+.leftArrow {
+  transform: rotate(180deg);
 }
