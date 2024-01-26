@@ -171,3 +171,49 @@ main {
 .leftArrow {
   transform: rotate(180deg);
 }
+
+/* DECORATIONS */
+
+.yarnDecorations {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.yarnImage {
+  max-width: 70px;
+  height: auto;
+}
+
+/* MAIN PAGE TEXT */
+
+.mainpageText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.smallHeadingMain {
+  font-family: var(--small-heading-font);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.mainPageTextContent {
+  font-family: var(--about-text-font);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.mainpageText {
+  margin: 0 300px;
+}
+
+.bottomYarn {
+  margin-top: 30px;
+}

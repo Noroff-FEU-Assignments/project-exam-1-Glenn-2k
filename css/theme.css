@@ -6,6 +6,7 @@
   --bg-header-colour: #6c8474;
   --button-orange: #ba6047;
   --small-heading-font: "Rochester", sans-serif;
+  --about-text-font: "Quicksand", sans-serif;
 }
 
 /* CSS RESETS */
@@ -29,4 +30,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
