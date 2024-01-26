@@ -152,6 +152,12 @@ main {
   margin-bottom: 50px;
 }
 
+.headingWrapper {
+  margin: 0 120px;
+  max-width: 890px;
+  margin: auto;
+}
+
 .smallHeadingCarousel {
   align-self: center;
   font-family: var(--small-heading-font);
