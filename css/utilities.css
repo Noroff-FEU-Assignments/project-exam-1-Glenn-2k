@@ -11,3 +11,7 @@
 .blogCardMargin {
   margin-bottom: 30px;
 }
+
+.filterBlur {
+  filter: blur(2px);
+}
