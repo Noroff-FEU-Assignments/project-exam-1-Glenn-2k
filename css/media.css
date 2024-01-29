@@ -52,6 +52,10 @@
   .nav-menu {
     display: flex;
   }
+
+  .mainPageText {
+    margin: 0 120px;
+  }
 }
 
 @media screen and (max-width: 1208px) {
@@ -64,6 +68,16 @@
   .displayNoneSmallest {
     display: none;
   }
+  .carouselSection {
+    margin: 0px;
+  }
+  .header-logo {
+  max-width: 150px;
+  transform: translateY(25%);
+}
+
+.hamburger {
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 658px) {
