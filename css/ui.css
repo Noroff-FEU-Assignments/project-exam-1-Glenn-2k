@@ -99,9 +99,9 @@ footer {
   padding: 0 5px 0 5px;
 }
 
-/* MAIN PAGE */
+/* MAIN PAGE & ABOUT */
 
-/* CAROUSEL & CARD */
+/* CAROUSEL & CARD / ABOUT PAGE */
 
 main {
   margin-top: 250px;
@@ -159,7 +159,8 @@ main {
   text-align: center;
 }
 
-.smallHeadingCarousel {
+.smallHeadingCarousel,
+.headingAbout {
   align-self: center;
   font-family: var(--small-heading-font);
   font-size: 2rem;
