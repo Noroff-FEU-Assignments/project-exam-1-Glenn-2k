@@ -160,7 +160,8 @@ main {
 }
 
 .smallHeadingCarousel,
-.headingAbout {
+.headingAbout,
+.headingBlogs {
   align-self: center;
   font-family: var(--small-heading-font);
   font-size: 2rem;
@@ -237,4 +238,12 @@ main {
   text-align: center;
   flex-wrap: wrap;
   margin: 0 120px;
+}
+
+/* BLOGS */
+
+.blogCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 120px;
 }
