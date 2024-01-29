@@ -68,7 +68,8 @@
   .displayNoneSmallest {
     display: none;
   }
-  .carouselSection {
+  .carouselSection,
+  .aboutText {
     margin: 0px;
   }
   .header-logo {
