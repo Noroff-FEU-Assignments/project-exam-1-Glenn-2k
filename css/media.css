@@ -53,3 +53,21 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 1208px) {
+  .displayNone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  .displayNoneSmallest {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .arrowGone {
+    display: none;
+  }
+}
