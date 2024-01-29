@@ -114,6 +114,9 @@ main {
   border: 1px solid var(--bg-main-colour);
   margin: 0 15px;
   border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .carouselCard img {
@@ -125,15 +128,13 @@ main {
 .carouselCardContent {
   padding: 15px;
   background: white;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .carouselButton {
   color: var(--button-orange);
   font-weight: 600;
   padding: 6px 12px;
-  align-self: center;
   border: 2px dashed var(--button-orange);
   border-radius: 6px;
   opacity: 0.8;
