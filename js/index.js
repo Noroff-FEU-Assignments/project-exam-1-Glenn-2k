@@ -1,3 +1,7 @@
+import { validateForm } from "./pages/contact.js";
+
+// validateForm();
+
 // import { hamburgerToggle } from "./ui/toggleMobileNav";
 
 // hamburgerToggle();
