@@ -59,7 +59,8 @@
 }
 
 @media screen and (max-width: 1208px) {
-  .displayNone {
+  .displayNone,
+  .displayNoneSmallest {
     display: none;
   }
 
@@ -69,9 +70,6 @@
 }
 
 @media screen and (max-width: 928px) {
-  .displayNoneSmallest {
-    display: none;
-  }
   .carouselSection,
   .aboutText,
   .contactText {
