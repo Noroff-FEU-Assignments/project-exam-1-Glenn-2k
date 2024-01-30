@@ -261,3 +261,7 @@ main {
 .contactParagraph {
   margin-bottom: 20px;
 }
+
+.contactForm {
+  display: grid;
+}
