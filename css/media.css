@@ -73,7 +73,8 @@
     display: none;
   }
   .carouselSection,
-  .aboutText {
+  .aboutText,
+  .contactText {
     margin: 0px;
   }
   .header-logo {
