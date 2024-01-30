@@ -51,6 +51,7 @@ export function validateEmail(email) {
   return emailMatch;
 }
 
-const contactForm = document.querySelector(".contactForm");
-
-contactForm.addEventListener("submit", validateForm);
+document.addEventListener("DOMContentLoaded", (event) => {
+  const contactForm = document.querySelector(".contactForm");
+  contactForm.addEventListener("submit", validateForm);
+});
