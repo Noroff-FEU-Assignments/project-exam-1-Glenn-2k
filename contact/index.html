@@ -67,23 +67,26 @@
         <p class="contactParagraph">
           Drop us a line below, and let's knit some connections together! 
         </p>
-
         <div class="contactFormContainer">
           <form class="contactForm" action="#" method="GET">
             <label for="name">Name*</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" placeholder="Full name" id="name" name="name" required />
             <div class="formError" id="nameError">Minimum 5 characters</div>
             <label for="email">Email*</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" placeholder="Valid Email required" id="email" name="email" required />
             <div class="formError" id="emailError">Must be a valid Email-adress</div>
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
+            <input type="text" placeholder="Minimum 15 characters" id="subject" name="subject" required />
             <div class="formError" id="subjectError">Should be more than 15 characters</div>
             <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <input type="submit" value="Submit" />
+            <textarea id="message" placeholder="Minimum 25 characters" name="message" required></textarea>
             <div class="formError" id="messageError">Should be more than 25 characters</div>
+            <input type="submit" value="Send message" />
           </form>
+        </div>
+
+        <div class="yarnDecorations">
+          <img src="/images/knitting.png" alt="ball of yarn" class="yarnImage" />
         </div>
     </main>
     <footer>

@@ -265,3 +265,39 @@ main {
 .contactForm {
   display: grid;
 }
+
+.contactForm input,
+textarea {
+  padding: 8px 20px;
+  border: 1px solid rgba(108, 132, 116, 0.6); /* Had to use rgba to get the opacity to work */
+  opacity: 0.5;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.contactForm input[type="submit"] {
+  background-color: var(--button-orange);
+  color: var(--bg-main-colour);
+  opacity: 1;
+  cursor: pointer;
+  padding: 7px 10px;
+  justify-self: end;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+label {
+  text-align: start;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--bg-header-colour);
+  padding-bottom: 2px;
+}
+
+.formError {
+  display: none;
+  color: red;
+  font-size: 0.7rem;
+  margin-top: 1px;
+}
