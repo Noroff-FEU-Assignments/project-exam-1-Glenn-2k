@@ -163,7 +163,8 @@ main {
 .smallHeadingCarousel,
 .headingAbout,
 .headingBlogs,
-.headingContact {
+.headingContact,
+.headingSpecific {
   align-self: center;
   font-family: var(--small-heading-font);
   font-size: 2rem;
@@ -301,4 +302,20 @@ label {
   color: red;
   font-size: 0.7rem;
   margin-top: 1px;
+}
+
+/* BLOGSPECIFIC */
+
+.specificBlogSection {
+  margin: 0 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blogDate {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: center;
 }
