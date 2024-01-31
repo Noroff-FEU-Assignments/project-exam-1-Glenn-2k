@@ -1,5 +1,6 @@
 import { validateForm } from "./pages/contact.js";
-import { apiURL } from "./api/getApi.js";
+import { url } from "./data/constants.js";
+import { fetchData } from "./data/fetchApi.js";
 
 // validateForm();
 
