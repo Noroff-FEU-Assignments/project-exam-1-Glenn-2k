@@ -1,4 +1,5 @@
 import { validateForm } from "./pages/contact.js";
+import { apiURL } from "./api/getApi.js";
 
 // validateForm();
 
