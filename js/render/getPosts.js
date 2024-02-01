@@ -1,14 +1,23 @@
-export function renderPosts(postData) {
-  const cardContainer = document.querySelector(".carouselCard");
-  const card = document.createElement("div");
-  card.classList.add("carouselCard");
+import { fetchData } from "../data/fetchApi.js";
 
-  //   const test = document.querySelector(".headingBlogs");
+fetchData().then((posts) => {
+  posts.forEach((post) => {
+    renderPosts(post); // Call renderPosts for each post
+  });
+});
 
-  const title = document.createElement("h3");
-  title.textContent = postData.title.rendered;
-  title.classList.add("carouselCardTitle");
+export async function renderPosts(posts) {
+  console.log(typeof posts);
+  const cardContainer = document.querySelector(".blogCardContainer");
+  posts.forEach((post) => {
+    const card = document.createElement("div");
+    card.classList.add("carouselCard");
 
-  card.append(title);
-  cardContainer.append(card);
+    const title = document.createElement("h3");
+    title.textContent = post.title.rendered;
+    title.classList.add("carouselCardTitle");
+
+    card.appendChild(title);
+    cardContainer.appendChild(card);
+  });
 }

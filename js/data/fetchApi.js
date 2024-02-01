@@ -9,5 +9,3 @@ export async function fetchData() {
   console.log(data);
   return data;
 }
-
-fetchData();
