@@ -1,9 +1,11 @@
 // import { validateForm } from "./pages/contact.js";
 import { BASE_URL } from "./data/constants.js";
 import { fetchData } from "./data/fetchApi.js";
-import { renderPosts } from "./render/getPosts.js";
+import { renderPost } from "./render/getPosts.js";
 
-renderPosts();
+// const testArray = await fetchData();
+// console.log(testArray);
+// renderPosts(testArray);
 
 // async function router() {
 //   switch (location.pathname) {
