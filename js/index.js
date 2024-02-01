@@ -1,12 +1,37 @@
-import { validateForm } from "./pages/contact.js";
+// import { validateForm } from "./pages/contact.js";
 import { BASE_URL } from "./data/constants.js";
 import { fetchData } from "./data/fetchApi.js";
+import { renderPosts } from "./render/getPosts.js";
 
-// validateForm();
+renderPosts();
 
-// import { hamburgerToggle } from "./ui/toggleMobileNav";
+// async function router() {
+//   switch (location.pathname) {
+//     case "/":
+//       await fetchData();
+//       break;
+//     case "/contact/":
+//       validateForm();
+//       break;
+//     case "/blogs/":
+//       renderPosts();
+//       try {
+//         };
+//       } catch (error) {
+//         console.log(error);
+//       }
+//       console.log("blogs");
+//       break;
+//     default:
+//       console.log("404");
+//   }
+// }
 
-// hamburgerToggle();
+// const posts = await fetchData();
+// posts.forEach = (post) => {
+//   console.log(post);
+//   renderPosts(post);
+// };
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -20,5 +45,3 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.add("hidden");
   }
 });
-
-// console.log(hamburgerToggle);

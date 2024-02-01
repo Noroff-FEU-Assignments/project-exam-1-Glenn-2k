@@ -4,10 +4,10 @@ export async function fetchData() {
   const response = await fetch(BASE_URL);
   if (!response.ok) {
     throw new Error(response.statusText);
-  } else
-  return await response.json();
- 
+  }
+  const data = await response.json();
+  console.log(data);
+  return data;
 }
 
-
-console.log(BASE_URL);
+fetchData();
