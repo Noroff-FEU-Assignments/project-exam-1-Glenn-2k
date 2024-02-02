@@ -47,8 +47,14 @@ export async function renderPost(posts) {
       title.textContent = posts.title.rendered;
       title.classList.add("carouselCardTitle");
 
-  card.appendChild(cardContent);
-  cardContent.appendChild(title);
+
+      const excerpt = document.createElement("p");
+      excerpt.textContent = posts.excerpt.rendered;
+      excerpt.classList.add("carouselCardText");
+
+      card.appendChild(cardContent);
+      cardContent.appendChild(title);
+      cardContent.appendChild(excerpt);    
   cardContainer.appendChild(card);
 }
 
