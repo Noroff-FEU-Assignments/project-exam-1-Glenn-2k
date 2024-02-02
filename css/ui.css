@@ -110,26 +110,29 @@ main {
 
 .carouselCard {
   width: 250px;
-  max-height: 390px;
+  min-height: 390px;
   overflow: hidden;
-  border: 1px solid var(--bg-main-colour);
+  /* border: 1px solid var(--bg-main-colour); */
   margin: 0 15px;
   border-radius: 0 0 8px 8px;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; */
+  background: white;
 }
 
 .carouselCard img {
   width: 100%;
   height: 180px;
   object-fit: cover;
+
 }
 
 .carouselCardContent {
   padding: 15px;
-  background: white;
+  /* background: white; */
   text-align: center;
+
 }
 
 .carouselButton {
@@ -175,6 +178,7 @@ main {
 .carouselCardTitle {
   font-weight: 500;
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 .carouselSection {
