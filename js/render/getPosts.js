@@ -52,9 +52,15 @@ export async function renderPost(posts) {
       excerpt.textContent = posts.excerpt.rendered;
       excerpt.classList.add("carouselCardText");
 
+      const readMore = document.createElement("a");
+      readMore.textContent = "Read more";
+      readMore.href = `post.html?id=${posts.id}`;
+      readMore.classList.add("carouselButton");
+      
       card.appendChild(cardContent);
       cardContent.appendChild(title);
       cardContent.appendChild(excerpt);    
+      cardContent.appendChild(readMore);
   cardContainer.appendChild(card);
 }
 
