@@ -8,7 +8,7 @@ const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
 export function validateForm() {
-  if (checkLength(name.value, 5) === true) {
+  if (checkLength(name.value, 4) === true) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
