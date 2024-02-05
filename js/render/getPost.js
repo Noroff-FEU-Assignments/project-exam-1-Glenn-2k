@@ -27,6 +27,11 @@ export async function specificPost(post) {
   });
   blogDate.classList.add("blogDate");
 
+  const specificBlogText = document.createElement("p");
+  specificBlogText.innerHTML = post.content.rendered;
+  specificBlogText.classList.add("blogContent");
+
   specificContainer.appendChild(specificHeading);
   specificContainer.appendChild(blogDate);
+  specificContainer.appendChild(specificBlogText);
 }

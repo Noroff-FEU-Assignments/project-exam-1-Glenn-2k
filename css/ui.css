@@ -125,14 +125,12 @@ main {
   width: 100%;
   height: 180px;
   object-fit: cover;
-
 }
 
 .carouselCardContent {
   padding: 15px;
   /* background: white; */
   text-align: center;
-
 }
 
 .carouselButton {
@@ -322,4 +320,9 @@ label {
   font-weight: 300;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.blogContent {
+  display: flex;
+  flex-direction: column;
 }
