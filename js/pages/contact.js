@@ -8,11 +8,13 @@ const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
 const contactForm = document.querySelector(".contactForm");
-if (contactForm) {
-  contactForm.addEventListener("submit", validateForm);
+export function formValidator() {
+  if (contactForm) {
+    contactForm.addEventListener("submit", validateForm);
+  }
 }
 
-export function validateForm() {
+export function validateForm(event) {
   if (checkLength(name.value, 4) === true) {
     nameError.style.display = "none";
   } else {

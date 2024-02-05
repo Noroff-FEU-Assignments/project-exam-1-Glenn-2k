@@ -4,14 +4,13 @@ const queryString = document.location.search;
 export const params = new URLSearchParams(queryString);
 export const postId = params.get("id");
 
-async function specificDataHandler() {
+export async function specificDataHandler() {
   const posts = await fetchSpecific(postId);
   specificPost(posts);
+  console.log(posts);
 }
 
-console.log(posts);
-
-specificDataHandler();
+// specificDataHandler();
 
 export async function specificPost(post) {
   const specificContainer = document.querySelector(".specificBlogSection");
@@ -20,6 +19,7 @@ export async function specificPost(post) {
   specificHeading.classList.add("headingSpecific");
 
   const blogDate = document.createElement("p");
+  blogDate.textContent = post.date;
   blogDate.classList.add("blogDate");
 
   specificContainer.appendChild(blogDate);

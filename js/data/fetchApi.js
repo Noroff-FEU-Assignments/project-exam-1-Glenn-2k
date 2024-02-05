@@ -10,7 +10,8 @@ export async function fetchData() {
 }
 
 export async function fetchSpecific(id) {
-  const response = await fetch(`${SPECIFIC_URL}?_embed${id}`);
+  const response = await fetch(`${SPECIFIC_URL}${id}`);
+  console.log(response);
   if (!response.ok) {
     throw new Error(response.statusText);
   }

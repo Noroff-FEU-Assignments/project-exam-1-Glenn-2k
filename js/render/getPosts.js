@@ -1,11 +1,11 @@
 import { fetchData } from "../data/fetchApi.js";
 
-async function dataHandler() {
+export async function dataHandler() {
   const posts = await fetchData();
   renderPosts(posts);
 }
 
-dataHandler();
+// dataHandler();
 
 function renderPosts(posts) {
   for (let i = 0; i < posts.length; i++) {
@@ -14,7 +14,7 @@ function renderPosts(posts) {
   }
 }
 
-export async function renderPost(posts) {
+function renderPost(posts) {
   const cardContainer = document.querySelector(".blogCardContainer");
   const card = document.createElement("div");
   card.classList.add("carouselCard", "alignCenter", "blogCardMargin");
