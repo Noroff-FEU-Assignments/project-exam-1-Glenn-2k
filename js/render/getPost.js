@@ -18,10 +18,15 @@ export async function specificPost(post) {
   specificHeading.textContent = post.title.rendered;
   specificHeading.classList.add("headingSpecific");
 
-  const blogDate = document.createElement("p");
-  blogDate.textContent = post.date;
+  const blogDate = document.createElement("time");
+  const postDate = new Date(post.date);
+  blogDate.textContent = postDate.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
   blogDate.classList.add("blogDate");
 
-  specificContainer.appendChild(blogDate);
   specificContainer.appendChild(specificHeading);
+  specificContainer.appendChild(blogDate);
 }
