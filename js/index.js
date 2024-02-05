@@ -1,4 +1,4 @@
-// import { validateForm } from "./pages/contact.js";
+import { validateForm } from "./pages/contact.js";
 import { BASE_URL } from "./data/constants.js";
 import { fetchData } from "./data/fetchApi.js";
 import { renderPost } from "./render/getPosts.js";
