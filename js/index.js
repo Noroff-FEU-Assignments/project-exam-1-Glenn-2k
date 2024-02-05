@@ -23,14 +23,21 @@ switch (window.location.pathname) {
   case "/index.html":
     break;
   case "/blogspecific/index.html":
+  case "/blogspecific/":
+  case "/blogspecific":
     specificDataHandler();
     break;
   case "/blogs/index.html":
+  case "/blogs/":
+  case "/blogs":
     dataHandler();
     break;
   case "/contact/index.html":
+  case "/contact/":
+  case "/contact":
     formValidator();
     break;
   default:
+    console.log("404 - not found");
     break;
 }
