@@ -22,14 +22,14 @@ export function validateForm() {
     event.preventDefault();
   }
 
-  if (checkLength(subject.value, 15) === true) {
+  if (checkLength(subject.value, 14) === true) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
     event.preventDefault();
   }
 
-  if (checkLength(message.value, 25) === true) {
+  if (checkLength(message.value, 24) === true) {
     messageError.style.display = "none";
   } else {
     messageError.style.display = "block";
