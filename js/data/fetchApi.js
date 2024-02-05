@@ -1,4 +1,4 @@
-import { BASE_URL } from "./constants.js";
+import { SPECIFIC_URL, BASE_URL } from "./constants.js";
 
 export async function fetchData() {
   const response = await fetch(BASE_URL);
@@ -6,6 +6,14 @@ export async function fetchData() {
     throw new Error(response.statusText);
   }
   const data = await response.json();
-  console.log(data);
   return data;
+}
+
+export async function fetchSpecific(id) {
+  const response = await fetch(`${SPECIFIC_URL}?_embed${id}`);
+  if (!response.ok) {
+    throw new Error(response.statusText);
+  }
+  const specificData = await response.json();
+  return specificData;
 }

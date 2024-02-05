@@ -7,6 +7,11 @@ const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
+const contactForm = document.querySelector(".contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", validateForm);
+}
+
 export function validateForm() {
   if (checkLength(name.value, 4) === true) {
     nameError.style.display = "none";
@@ -37,7 +42,7 @@ export function validateForm() {
   }
 }
 
-export function checkLength(value, length) {
+function checkLength(value, length) {
   if (value.trim().length > length) {
     return true;
   } else {
@@ -45,13 +50,8 @@ export function checkLength(value, length) {
   }
 }
 
-export function validateEmail(email) {
+function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
   const emailMatch = regEx.test(email);
   return emailMatch;
 }
-
-document.addEventListener("DOMContentLoaded", (event) => {
-  const contactForm = document.querySelector(".contactForm");
-  contactForm.addEventListener("submit", validateForm);
-});

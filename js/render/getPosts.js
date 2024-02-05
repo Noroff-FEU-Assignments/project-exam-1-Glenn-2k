@@ -1,11 +1,6 @@
 import { fetchData } from "../data/fetchApi.js";
 
 async function dataHandler() {
-  //   await fetchData().then((posts) => {
-  //     posts.forEach((post) => {
-  //       renderPosts(post);
-  //     });
-  //   });
   const posts = await fetchData();
   renderPosts(posts);
 }
@@ -20,7 +15,6 @@ function renderPosts(posts) {
 }
 
 export async function renderPost(posts) {
-  console.log(typeof posts);
   const cardContainer = document.querySelector(".blogCardContainer");
   const card = document.createElement("div");
   card.classList.add("carouselCard", "alignCenter", "blogCardMargin");
@@ -46,7 +40,7 @@ export async function renderPost(posts) {
 
   const readMore = document.createElement("a");
   readMore.textContent = "Read more";
-  readMore.href = `post.html?id=${posts.id}`;
+  readMore.href = `/blogspecific/index.html?id=${posts.id}`;
   readMore.classList.add("carouselButton");
 
   card.appendChild(cardContent);
