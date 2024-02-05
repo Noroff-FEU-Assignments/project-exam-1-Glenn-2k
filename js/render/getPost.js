@@ -6,15 +6,17 @@ export const postId = params.get("id");
 
 async function specificDataHandler() {
   const posts = await fetchSpecific(postId);
-  postHandler(posts);
+  specificPost(posts);
 }
+
+console.log(posts);
 
 specificDataHandler();
 
-export async function specificPost(postHandler) {
+export async function specificPost(post) {
   const specificContainer = document.querySelector(".specificBlogSection");
   const specificHeading = document.createElement("h2");
-  specificHeading.textContent = postHandler.title.rendered;
+  specificHeading.textContent = post.title.rendered;
   specificHeading.classList.add("headingSpecific");
 
   const blogDate = document.createElement("p");
