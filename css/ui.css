@@ -204,15 +204,30 @@ main {
 
 .carouselSection {
   margin: 0 120px;
+  position: relative;
 }
 
 .arrows {
   width: 55px;
   height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.leftArrow {
+.leftArrow img {
   transform: rotate(180deg);
+}
+
+.rightArrow,
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.rightArrow {
+  right: 0;
 }
 
 /* DECORATIONS */

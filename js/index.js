@@ -4,7 +4,7 @@ import { fetchData } from "./data/fetchApi.js";
 import { dataHandler } from "./render/getPosts.js";
 import { fetchSpecific } from "./data/fetchApi.js";
 import { specificDataHandler } from "./render/getPost.js";
-import { carouselHandler } from "./ui/carousel.js";
+import { carouselHandler, carousel, arrows } from "./ui/carousel.js";
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -23,6 +23,8 @@ switch (window.location.pathname) {
   case "/":
   case "/index.html":
     carouselHandler();
+    carousel();
+    arrows();
     break;
   case "/blogspecific/index.html":
   case "/blogspecific/":
