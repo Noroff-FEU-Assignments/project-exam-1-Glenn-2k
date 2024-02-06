@@ -109,9 +109,10 @@ main {
 }
 
 .carouselCard {
+  display: inline-block;
   width: 250px;
   min-height: 390px;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: 1px solid var(--bg-main-colour); */
   margin: 0 15px;
   border-radius: 0 0 8px 8px;
@@ -152,9 +153,11 @@ main {
 
 .carouselWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin-bottom: 50px;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .headingWrapper {
