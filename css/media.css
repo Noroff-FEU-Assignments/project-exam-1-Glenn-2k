@@ -64,6 +64,10 @@
     display: none;
   }
 
+  .arrows {
+    display: none;
+  }
+
   .blogCardContainer {
     grid-template-columns: repeat(2, 1fr);
   }
