@@ -133,6 +133,7 @@ main {
   /* background: white; */
   text-align: center;
   width: 15rem;
+  max-height: 180px;
 }
 
 /* SCROLLBAR REMOVER */
