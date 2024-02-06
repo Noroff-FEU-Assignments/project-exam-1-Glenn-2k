@@ -170,7 +170,7 @@ main {
   justify-content: start;
   align-items: center;
   margin-bottom: 50px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .headingWrapper {
