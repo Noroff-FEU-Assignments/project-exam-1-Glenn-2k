@@ -172,6 +172,8 @@ main {
   align-items: center;
   margin-bottom: 50px;
   overflow-x: auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .carouselWrapper.active {
