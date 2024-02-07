@@ -95,8 +95,7 @@
   .blogContent img {
     max-width: 300px;
   }
-
-
+}
 
 @media screen and (max-width: 658px) {
   .arrowGone {
