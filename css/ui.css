@@ -293,6 +293,22 @@ main {
   margin: 20px 120px;
 }
 
+.viewMoreWrapper {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.viewMorePostsBtn {
+  padding: 10px 15px;
+  margin-top: 20px;
+  color: var(--bg-secondary-colour);
+  cursor: pointer;
+  background-color: var(--button-orange);
+  border-radius: 9px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 /* CONTACT PAGE */
 
 .headingContact {

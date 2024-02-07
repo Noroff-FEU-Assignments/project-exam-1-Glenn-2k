@@ -1,7 +1,16 @@
-import { SPECIFIC_URL, BASE_URL } from "./constants.js";
+import { SPECIFIC_URL, BASE_URL, BASE_URL_MORE } from "./constants.js";
 
 export async function fetchData() {
   const response = await fetch(BASE_URL);
+  if (!response.ok) {
+    throw new Error(response.statusText);
+  }
+  const data = await response.json();
+  return data;
+}
+
+export async function fetchMoreData() {
+  const response = await fetch(BASE_URL_MORE);
   if (!response.ok) {
     throw new Error(response.statusText);
   }

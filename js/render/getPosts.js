@@ -1,9 +1,15 @@
 import { fetchData } from "../data/fetchApi.js";
+import { fetchMoreData } from "../data/fetchApi.js";
 
 export async function dataHandler() {
   const posts = await fetchData();
   renderPosts(posts);
 }
+
+// export async function dataHandler() {
+//   const posts = await fetchMoreData();
+//   renderPosts(posts);
+// }
 
 // dataHandler();
 
