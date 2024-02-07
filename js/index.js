@@ -4,7 +4,12 @@ import { fetchData } from "./data/fetchApi.js";
 import { dataHandler } from "./render/getPosts.js";
 import { fetchSpecific } from "./data/fetchApi.js";
 import { specificDataHandler } from "./render/getPost.js";
-import { carouselHandler, carousel, arrows } from "./ui/carousel.js";
+import {
+  carouselHandler,
+  carousel,
+  arrows,
+  sliderFunction,
+} from "./ui/carousel.js";
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -25,6 +30,7 @@ switch (window.location.pathname) {
     carouselHandler();
     carousel();
     arrows();
+    sliderFunction();
     break;
   case "/blogspecific/index.html":
   case "/blogspecific/":
@@ -45,30 +51,3 @@ switch (window.location.pathname) {
     console.log("404 - not found");
     break;
 }
-
-const slider = document.querySelector(".carouselWrapper");
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener("mousedown", (e) => {
-  isDown = true;
-  slider.classList.add("active");
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; // The number 3 determines the sensitivity of the drag
-  slider.scrollLeft = scrollLeft - walk;
-});
