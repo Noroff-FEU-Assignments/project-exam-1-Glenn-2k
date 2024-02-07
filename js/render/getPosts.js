@@ -52,16 +52,18 @@ function renderPost(posts) {
 
 // VIEW MORE POSTS BUTTON //
 
-let currentOffset = 9;
+export async function viewMorePosts() {
+  let currentOffset = 9;
 
-document
-  .getElementById("viewMorePostsbtn")
-  .addEventListener("click", async () => {
-    const additionalPosts = await fetchData(4, currentOffset);
-    renderPosts(additionalPosts);
-    currentOffset += additionalPosts.length;
+  document
+    .getElementById("viewMorePostsbtn")
+    .addEventListener("click", async () => {
+      const additionalPosts = await fetchData(4, currentOffset);
+      renderPosts(additionalPosts);
+      currentOffset += additionalPosts.length;
 
-    if (additionalPosts.length < 4) {
-      document.getElementById("viewMorePostsbtn").style.display = "none";
-    }
-  });
+      if (additionalPosts.length < 4) {
+        document.getElementById("viewMorePostsbtn").style.display = "none";
+      }
+    });
+}

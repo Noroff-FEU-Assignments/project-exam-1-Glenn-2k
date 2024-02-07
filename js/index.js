@@ -1,7 +1,7 @@
 import { formValidator } from "./pages/contact.js";
 import { BASE_URL } from "./data/constants.js";
 import { fetchData } from "./data/fetchApi.js";
-import { dataHandler } from "./render/getPosts.js";
+import { dataHandler, viewMorePosts } from "./render/getPosts.js";
 import { fetchSpecific } from "./data/fetchApi.js";
 import { specificDataHandler } from "./render/getPost.js";
 import {
@@ -41,6 +41,7 @@ switch (window.location.pathname) {
   case "/blogs/":
   case "/blogs":
     dataHandler();
+    viewMorePosts();
     break;
   case "/contact/index.html":
   case "/contact/":
