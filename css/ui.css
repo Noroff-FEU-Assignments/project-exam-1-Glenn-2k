@@ -109,15 +109,17 @@ main {
 }
 
 .carouselCard {
-  display: inline-block;
+  /* display: inline-block; */
   /* width: 250px; */
-  min-height: 390px;
+  /* min-height: 390px; */
   /* overflow: hidden; */
   /* border: 1px solid var(--bg-main-colour); */
   margin: 0 15px;
   border-radius: 0 0 8px 8px;
-  /* display: flex;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* flex-wrap: wrap;
   align-items: center; */
   background: white;
 }
@@ -130,10 +132,18 @@ main {
 
 .carouselCardContent {
   padding: 15px;
-  /* background: white; */
   text-align: center;
   width: 15rem;
   max-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carouselCardContent > * {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* SCROLLBAR REMOVER */
