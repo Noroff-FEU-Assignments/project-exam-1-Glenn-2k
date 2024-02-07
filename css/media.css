@@ -91,6 +91,10 @@
   .blogCardContainer {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .blogContent img {
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 658px) {
