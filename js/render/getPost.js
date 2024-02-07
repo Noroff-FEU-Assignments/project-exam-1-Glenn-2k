@@ -27,7 +27,7 @@ export async function specificPost(post) {
   });
   blogDate.classList.add("blogDate");
 
-  const specificBlogText = document.createElement("p");
+  const specificBlogText = document.createElement("div");
   specificBlogText.innerHTML = post.content.rendered;
   specificBlogText.classList.add("blogContent");
 

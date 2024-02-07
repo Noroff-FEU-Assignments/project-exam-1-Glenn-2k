@@ -380,3 +380,19 @@ label {
   display: flex;
   flex-direction: column;
 }
+
+.blogContent img {
+  max-width: 350px; /* Makes images responsive, ensuring they don't overflow their container */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.blogContent h3 {
+  text-align: center;
+}
+
+.blogContent p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  /* margin: 10px 0; */
+}
