@@ -414,12 +414,12 @@ label {
   align-items: center;
 }
 
-.modal-content {
+.modalContent {
   margin: auto;
   display: block;
-  width: 50%;
-  max-width: 500px;
-  height: auto;
+  max-width: 60%;
+  max-height: 50vh;
+  object-fit: contain;
 }
 
 .close {
@@ -428,6 +428,6 @@ label {
   right: 35px;
   color: #ffffff;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 800;
   cursor: pointer;
 }

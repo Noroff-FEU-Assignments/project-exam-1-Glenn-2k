@@ -10,8 +10,6 @@ export async function specificDataHandler() {
   console.log(posts);
 }
 
-// specificDataHandler();
-
 export async function specificPost(post) {
   const specificContainer = document.querySelector(".specificBlogSection");
   const specificHeading = document.createElement("h2");
@@ -45,13 +43,13 @@ export async function specificPost(post) {
     });
   });
 
-  // Close functionality
+  // CLOSING THE MODAL
   const modal = document.getElementById("imgModal");
-  const span = document.getElementsByClassName("close")[0]; // Assuming there's only one close button
+  const span = document.getElementsByClassName("close")[0];
   span.onclick = function () {
     modal.style.display = "none";
   };
-  // Close modal when clicking outside of the image
+
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";

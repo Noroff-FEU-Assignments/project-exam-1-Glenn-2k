@@ -93,9 +93,10 @@
   }
 
   .blogContent img {
-    max-width: 200px;
+    max-width: 300px;
   }
-}
+
+
 
 @media screen and (max-width: 658px) {
   .arrowGone {
@@ -104,5 +105,9 @@
 
   .blogCardContainer {
     margin: 20px 0;
+  }
+
+  .blogContent img {
+    max-width: 200px;
   }
 }
