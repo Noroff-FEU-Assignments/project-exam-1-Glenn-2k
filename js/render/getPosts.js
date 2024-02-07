@@ -49,3 +49,19 @@ function renderPost(posts) {
   cardContent.appendChild(readMore);
   cardContainer.appendChild(card);
 }
+
+// VIEW MORE POSTS BUTTON //
+
+let currentOffset = 9;
+
+document
+  .getElementById("viewMorePostsbtn")
+  .addEventListener("click", async () => {
+    const additionalPosts = await fetchData(4, currentOffset);
+    renderPosts(additionalPosts);
+    currentOffset += additionalPosts.length;
+
+    if (additionalPosts.length < 4) {
+      document.getElementById("viewMorePostsbtn").style.display = "none";
+    }
+  });

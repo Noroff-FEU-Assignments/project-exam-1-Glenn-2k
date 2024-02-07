@@ -1,7 +1,8 @@
 import { SPECIFIC_URL, BASE_URL } from "./constants.js";
 
-export async function fetchData() {
-  const response = await fetch(BASE_URL);
+export async function fetchData(per_page = 9, offset = 0) {
+  const url = `${BASE_URL}&per_page=${per_page}&offset=${offset}`;
+  const response = await fetch(url);
   if (!response.ok) {
     throw new Error(response.statusText);
   }
