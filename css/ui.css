@@ -382,8 +382,8 @@ label {
 }
 
 .blogContent img {
-  max-width: 350px; /* Makes images responsive, ensuring they don't overflow their container */
-  height: auto; /* Maintains the aspect ratio */
+  max-width: 350px;
+  height: auto;
   margin: 20px;
 }
 
@@ -396,4 +396,38 @@ label {
   font-weight: 400;
   line-height: 1.2;
   margin: 10px 0 30px 0;
+}
+
+/*  MODAL STYLES */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }

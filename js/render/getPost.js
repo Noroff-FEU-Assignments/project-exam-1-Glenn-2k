@@ -34,4 +34,27 @@ export async function specificPost(post) {
   specificContainer.appendChild(specificHeading);
   specificContainer.appendChild(blogDate);
   specificContainer.appendChild(specificBlogText);
+
+  specificContainer.querySelectorAll(".blogContent img").forEach((img) => {
+    img.style.cursor = "pointer";
+    img.addEventListener("click", function () {
+      const modal = document.getElementById("imgModal");
+      const modalImg = document.getElementById("modalImg");
+      modal.style.display = "flex";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Close functionality
+  const modal = document.getElementById("imgModal");
+  const span = document.getElementsByClassName("close")[0]; // Assuming there's only one close button
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+  // Close modal when clicking outside of the image
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 }
