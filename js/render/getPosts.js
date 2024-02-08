@@ -1,8 +1,14 @@
 import { fetchData } from "../data/fetchApi.js";
+import { displayErrorMessage } from "../data/errorHandling.js";
 
 export async function dataHandler() {
-  const posts = await fetchData();
-  renderPosts(posts);
+  try {
+    const posts = await fetchData();
+    renderPosts(posts);
+  } catch (error) {
+    console.error(error);
+    displayErrorMessage("An error occurred when fetching the posts");
+  }
 }
 
 // dataHandler();

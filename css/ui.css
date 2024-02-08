@@ -441,3 +441,18 @@ label {
   font-weight: 800;
   cursor: pointer;
 }
+
+.toast-message {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(200, 0, 0, 0.85);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: opacity 0.5s;
+}
+
+.fade-out {
+  opacity: 0;
+}
