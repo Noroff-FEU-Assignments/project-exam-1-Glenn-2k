@@ -173,6 +173,13 @@ main {
   border-radius: 6px;
   opacity: 0.8;
   font-size: 0.7rem;
+  transition: all 0.7s ease;
+}
+
+.carouselButton:hover {
+  opacity: 1;
+  background-color: var(--button-orange);
+  color: var(--bg-main-colour);
 }
 
 .carouselCardText {
