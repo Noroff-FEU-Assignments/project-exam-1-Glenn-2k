@@ -361,6 +361,15 @@ main {
   border-radius: 9px;
   font-size: 0.8rem;
   font-weight: 600;
+  transition: all 0.1s ease;
+}
+
+.viewMorePostsBtn:hover {
+  background-color: var(--bg-main-colour);
+  color: var(--button-orange);
+  border: 2px dashed var(--button-orange);
+  border-radius: 6px;
+  opacity: 0.8;
 }
 
 /* BLOGS */
@@ -411,6 +420,15 @@ textarea:focus {
   justify-self: end;
   margin-bottom: 30px;
   margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+.contactForm input[type="submit"]:hover {
+  background-color: var(--bg-main-colour);
+  color: var(--button-orange);
+  border: 2px dashed var(--button-orange);
+  border-radius: 6px;
+  opacity: 0.8;
 }
 
 label {
