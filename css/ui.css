@@ -73,6 +73,10 @@ a {
   display: none;
 }
 
+/* Header, footer, nav, alerts, pop ups etc goes here  */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
 /* FOOTER */
 
 footer {
@@ -100,9 +104,11 @@ footer {
   padding: 0 5px 0 5px;
 }
 
-/* MAIN PAGE & ABOUT */
+/* FOOTER */
 
-/* CAROUSEL & CARD / ABOUT PAGE */
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* CAROUSEL & CARD / ABOUT PAGE */ /* MAIN PAGE & ABOUT */
 
 main {
   margin-top: 250px;
@@ -145,19 +151,6 @@ main {
   max-width: 100%;
   max-height: 100%;
 }
-
-/* SCROLLBAR REMOVER */
-
-.carouselWrapper {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.carouselWrapper::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
-}
-
-/* SCROLLBAR REMOVER */
 
 .carouselButton {
   color: var(--button-orange);
@@ -240,6 +233,25 @@ main {
   right: 0;
 }
 
+/* CAROUSEL & CARD / ABOUT PAGE */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* SCROLLBAR REMOVER */
+
+.carouselWrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carouselWrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+/* SCROLLBAR REMOVER */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
 /* DECORATIONS */
 
 .yarnDecorations {
@@ -253,6 +265,10 @@ main {
   max-width: 70px;
   height: auto;
 }
+
+/* DECORATIONS */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 /* MAIN PAGE TEXT */
 
@@ -283,6 +299,10 @@ main {
   margin-top: 40px;
 }
 
+/* MAIN PAGE TEXT */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
 /* ABOUT PAGE CONTENT */
 
 .aboutText,
@@ -294,6 +314,10 @@ main {
   flex-wrap: wrap;
   margin: 0 120px;
 }
+
+/* ABOUT PAGE CONTENT */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 /* BLOGS */
 
@@ -319,6 +343,10 @@ main {
   font-weight: 600;
 }
 
+/* BLOGS */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
 /* CONTACT PAGE */
 
 .headingContact {
@@ -341,6 +369,17 @@ textarea {
   opacity: 0.5;
   border-radius: 6px;
   font-size: 0.8rem;
+}
+
+.contactForm input:hover,
+textarea:hover {
+  opacity: 0.8;
+}
+
+.contactForm input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid rgba(108, 132, 116, 0.9);
 }
 
 .contactForm input[type="submit"] {
@@ -369,6 +408,10 @@ label {
   font-size: 0.7rem;
   margin-top: 1px;
 }
+
+/* CONTACT PAGE */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 /* BLOGSPECIFIC */
 
@@ -408,6 +451,10 @@ label {
   margin: 10px 0 30px 0;
 }
 
+/* BLOGSPECIFIC */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
 /*  MODAL STYLES */
 
 .modal {
@@ -442,6 +489,12 @@ label {
   cursor: pointer;
 }
 
+/*  MODAL STYLES */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* ERROR HANDLING  */
+
 .toast-message {
   position: fixed;
   bottom: 20px;
@@ -456,3 +509,5 @@ label {
 .fade-out {
   opacity: 0;
 }
+
+/* ERROR HANDLING  */
