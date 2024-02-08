@@ -69,6 +69,14 @@ a {
   height: auto;
 }
 
+.HamburgerPins {
+  transition: transform 0.7s ease;
+}
+
+.HamburgerPins.rotate {
+  transform: rotate(-90deg);
+}
+
 .imageContainer {
   grid-column: 2;
   justify-self: center;

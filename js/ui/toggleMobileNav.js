@@ -4,6 +4,7 @@ export async function hamburgerMenu() {
 
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
+    hamburger.classList.toggle("rotate");
     console.log(navMenu.classList);
     if (navMenu.classList.contains("hidden")) {
       navMenu.classList.remove("hidden");
