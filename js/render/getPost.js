@@ -43,6 +43,12 @@ export async function specificPost(post) {
     });
   });
 
+  function titleHandler() {
+    document.title = `CabinCrafts | ${post.title.rendered}`;
+  }
+
+  titleHandler();
+
   // CLOSING THE MODAL
   const modal = document.getElementById("imgModal");
   const span = document.getElementsByClassName("close")[0];
