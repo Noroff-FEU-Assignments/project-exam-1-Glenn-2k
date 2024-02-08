@@ -110,7 +110,7 @@ main {
 
 .carouselCard {
   /* display: inline-block; */
-  /* width: 250px; */
+  width: 250px;
   min-height: 355px;
   /* overflow: hidden; */
   /* border: 1px solid var(--bg-main-colour); */
