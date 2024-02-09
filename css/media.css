@@ -1,5 +1,17 @@
 /* Media Queries goes here  */
 
+@media (min-width: 897px) {
+  /* HEADER AND NAV */
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .mainPageText {
+    margin: 0 120px;
+  }
+}
+
 @media (max-width: 896px) {
   /* HEADER AND NAV */
 
@@ -43,18 +55,6 @@
   .header-logo {
     position: relative;
     z-index: 1;
-  }
-}
-
-@media (min-width: 897px) {
-  /* HEADER AND NAV */
-
-  .nav-menu {
-    display: flex;
-  }
-
-  .mainPageText {
-    margin: 0 120px;
   }
 }
 
