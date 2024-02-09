@@ -71,6 +71,10 @@
   .blogCardContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .carouselSection {
+    margin: 0px;
+  }
 }
 
 @media screen and (max-width: 928px) {
