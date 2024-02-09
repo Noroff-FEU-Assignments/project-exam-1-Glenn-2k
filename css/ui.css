@@ -29,6 +29,10 @@ a {
   color: var(--bg-main-colour);
 }
 
+a.active {
+  text-decoration: line-through;
+}
+
 .container,
 .subcontainer {
   margin: auto;

@@ -42,3 +42,14 @@ switch (window.location.pathname) {
     console.log("404 - not found");
     break;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("nav a");
+  const currentUrl = window.location.pathname;
+
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentUrl) {
+      link.classList.add("active");
+    }
+  });
+});
