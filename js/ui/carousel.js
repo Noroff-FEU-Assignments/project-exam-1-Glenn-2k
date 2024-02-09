@@ -141,7 +141,7 @@ export function sliderFunction() {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; // The number 3 determines the sensitivity of the drag
+    const walk = (x - startX) * 1;
     slider.scrollLeft = scrollLeft - walk;
   });
 }
