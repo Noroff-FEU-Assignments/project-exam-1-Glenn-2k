@@ -13,8 +13,6 @@
 }
 
 @media (max-width: 896px) {
-  /* HEADER AND NAV */
-
   .nav-logo {
     display: none;
   }
