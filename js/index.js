@@ -43,6 +43,8 @@ switch (window.location.pathname) {
     break;
 }
 
+// Function I want run on all pages:
+
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll("nav a");
   const currentUrl = window.location.pathname;
