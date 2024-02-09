@@ -1,13 +1,23 @@
 import { fetchSpecific } from "../data/fetchApi.js";
+import { displayError } from "../data/errorHandling.js";
+import { showLoading } from "../data/loading.js";
+import { hideLoading } from "../data/loading.js";
 
 const queryString = document.location.search;
 export const params = new URLSearchParams(queryString);
 export const postId = params.get("id");
 
 export async function specificDataHandler() {
-  const posts = await fetchSpecific(postId);
-  specificPost(posts);
-  console.log(posts);
+  showLoading();
+  try {
+    const posts = await fetchSpecific(postId);
+    specificPost(posts);
+  } catch (error) {
+    console.error(error);
+    displayError();
+  } finally {
+    hideLoading();
+  }
 }
 
 export async function specificPost(post) {

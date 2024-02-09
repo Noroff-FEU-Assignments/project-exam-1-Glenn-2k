@@ -1,22 +1,35 @@
 import { fetchData } from "../data/fetchApi.js";
-import { displayErrorMessage } from "../data/errorHandling.js";
+import { displayError } from "../data/errorHandling.js";
+import { showLoading } from "../data/loading.js";
+import { hideLoading } from "../data/loading.js";
 
 export async function dataHandler() {
+  showLoading();
   try {
     const posts = await fetchData();
     renderPosts(posts);
   } catch (error) {
     console.error(error);
-    displayErrorMessage("An error occurred when fetching the posts");
+    displayError();
+  } finally {
+    hideLoading();
   }
 }
 
 // dataHandler();
 
 function renderPosts(posts) {
-  for (let i = 0; i < posts.length; i++) {
-    const post = posts[i];
-    renderPost(post);
+  showLoading();
+  try {
+    for (let i = 0; i < posts.length; i++) {
+      const post = posts[i];
+      renderPost(post);
+    }
+  } catch (error) {
+    console.error(error);
+    displayError();
+  } finally {
+    hideLoading();
   }
 }
 
@@ -59,17 +72,25 @@ function renderPost(posts) {
 // VIEW MORE POSTS BUTTON //
 
 export async function viewMorePosts() {
-  let currentOffset = 9;
+  showLoading();
+  try {
+    let currentOffset = 9;
 
-  document
-    .getElementById("viewMorePostsbtn")
-    .addEventListener("click", async () => {
-      const additionalPosts = await fetchData(4, currentOffset);
-      renderPosts(additionalPosts);
-      currentOffset += additionalPosts.length;
+    document
+      .getElementById("viewMorePostsbtn")
+      .addEventListener("click", async () => {
+        const additionalPosts = await fetchData(4, currentOffset);
+        renderPosts(additionalPosts);
+        currentOffset += additionalPosts.length;
 
-      if (additionalPosts.length < 4) {
-        document.getElementById("viewMorePostsbtn").style.display = "none";
-      }
-    });
+        if (additionalPosts.length < 4) {
+          document.getElementById("viewMorePostsbtn").style.display = "none";
+        }
+      });
+  } catch (error) {
+    console.error(error);
+    displayError();
+  } finally {
+    hideLoading();
+  }
 }

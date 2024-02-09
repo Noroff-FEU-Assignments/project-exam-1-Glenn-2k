@@ -1,16 +1,35 @@
+import { displayError } from "../data/errorHandling.js";
 import { fetchData } from "../data/fetchApi.js";
+import { showLoading } from "../data/loading.js";
+import { hideLoading } from "../data/loading.js";
 
 export async function carouselHandler() {
-  const posts = await fetchData();
-  renderPosts(posts);
+  showLoading();
+  try {
+    const posts = await fetchData();
+    renderPosts(posts);
+  } catch (error) {
+    console.error(error);
+    displayError();
+  } finally {
+    hideLoading();
+  }
 }
 
 // dataHandler();
 
 function renderPosts(posts) {
-  for (let i = 0; i < posts.length; i++) {
-    const post = posts[i];
-    renderPost(post);
+  showLoading();
+  try {
+    for (let i = 0; i < posts.length; i++) {
+      const post = posts[i];
+      renderPost(post);
+    }
+  } catch (error) {
+    console.error(error);
+    displayError();
+  } finally {
+    hideLoading();
   }
 }
 
