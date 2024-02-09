@@ -16,8 +16,6 @@ export async function carouselHandler() {
   }
 }
 
-// dataHandler();
-
 function renderPosts(posts) {
   showLoading();
   try {
@@ -103,16 +101,13 @@ export async function arrows() {
   const arrowRight = document.getElementById("arrowRight");
   const slider = document.querySelector(".carouselWrapper");
 
-  // Amount of scroll per click
   const scrollAmount = 300;
 
   arrowLeft.addEventListener("click", () => {
-    // Scrolls the slider left by subtracting the scroll amount
     slider.scrollLeft -= scrollAmount;
   });
 
   arrowRight.addEventListener("click", () => {
-    // Scrolls the slider right by adding the scroll amount
     slider.scrollLeft += scrollAmount;
   });
 }
