@@ -95,6 +95,9 @@
   .blogContent img {
     max-width: 300px;
   }
+  .mainPageTextContent {
+    margin: 10px 20px;
+  }
 }
 
 @media screen and (max-width: 658px) {
