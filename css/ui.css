@@ -339,7 +339,8 @@ main {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  margin: 0 120px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* ABOUT PAGE CONTENT */
