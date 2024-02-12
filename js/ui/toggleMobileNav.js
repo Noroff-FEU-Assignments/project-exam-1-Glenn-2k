@@ -6,8 +6,6 @@ export async function hamburgerMenu() {
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     hamburgerRotate.classList.toggle("rotate");
-    console.log(navMenu.classList);
-
     navMenu.classList.toggle("hidden");
   });
 }
