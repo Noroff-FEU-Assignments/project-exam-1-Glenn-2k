@@ -1,6 +1,6 @@
 export async function showLoading() {
   const loadingVisible = document.getElementById("loading");
-  loadingVisible.style.display = "block";
+  loadingVisible.style.display = "flex";
 }
 
 export async function hideLoading() {
