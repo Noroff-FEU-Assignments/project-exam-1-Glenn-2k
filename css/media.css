@@ -73,6 +73,10 @@
   .carouselSection {
     margin: 0px;
   }
+
+  .flex {
+    width: calc(250px * 2 + 10px * 2);
+  }
 }
 
 @media screen and (max-width: 928px) {
@@ -100,6 +104,10 @@
   .mainPageTextContent {
     margin: 10px 20px;
   }
+
+  .flex {
+    width: calc(250px * 2 + 10px * 2);
+  }
 }
 
 @media screen and (max-width: 658px) {
@@ -113,5 +121,9 @@
 
   .blogContent img {
     max-width: 200px;
+  }
+
+  .flex {
+    width: calc(250px * 1 + 10px * 2);
   }
 }

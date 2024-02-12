@@ -69,6 +69,10 @@ function renderPost(posts) {
 
 export async function carousel() {
   const carouselSection = document.querySelector(".carouselSection");
+  const cardContainer = document.querySelector(".carouselWrapper");
+  const flexContainer = document.createElement("div");
+
+  flexContainer.classList.add("flex");
 
   const btnLeft = document.createElement("div");
   btnLeft.classList.add("leftArrow");
@@ -92,8 +96,11 @@ export async function carousel() {
 
   btnRight.appendChild(btnRightIcon);
   btnLeft.appendChild(btnLeftIcon);
-  carouselSection.appendChild(btnRight);
-  carouselSection.appendChild(btnLeft);
+  flexContainer.appendChild(btnLeft);
+  flexContainer.appendChild(cardContainer);
+  flexContainer.appendChild(btnRight);
+
+  carouselSection.appendChild(flexContainer);
 }
 
 export async function arrows() {
