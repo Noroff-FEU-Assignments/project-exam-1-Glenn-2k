@@ -19,7 +19,6 @@ export async function dataHandler() {
 // dataHandler();
 
 function renderPosts(posts) {
-  showLoading();
   try {
     for (let i = 0; i < posts.length; i++) {
       const post = posts[i];
@@ -27,9 +26,7 @@ function renderPosts(posts) {
     }
   } catch (error) {
     console.error(error);
-    displayError();
   } finally {
-    hideLoading();
   }
 }
 
