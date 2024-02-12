@@ -69,25 +69,22 @@ function renderPost(posts) {
 // VIEW MORE POSTS BUTTON //
 
 export async function viewMorePosts() {
-  showLoading();
   try {
     let currentOffset = 9;
 
     document
-      .getElementById("viewMorePostsbtn")
+      .getElementById("viewMorePostsBtn")
       .addEventListener("click", async () => {
         const additionalPosts = await fetchData(4, currentOffset);
         renderPosts(additionalPosts);
         currentOffset += additionalPosts.length;
 
         if (additionalPosts.length < 4) {
-          document.getElementById("viewMorePostsbtn").style.display = "none";
+          document.getElementById("viewMorePostsBtn").style.display = "none";
         }
       });
   } catch (error) {
     console.error(error);
     displayError();
-  } finally {
-    hideLoading();
   }
 }
