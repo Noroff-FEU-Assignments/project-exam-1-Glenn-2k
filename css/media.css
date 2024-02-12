@@ -92,7 +92,7 @@
   }
 
   .hamburger {
-    margin-left: 15px;
+    margin-left: 40px;
   }
   .blogCardContainer {
     grid-template-columns: repeat(1, 1fr);
