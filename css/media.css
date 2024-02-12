@@ -77,6 +77,14 @@
   .flex {
     width: calc(250px * 2 + 10px * 2);
   }
+
+  .info {
+    display: block;
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.4);
+  }
 }
 
 @media screen and (max-width: 928px) {

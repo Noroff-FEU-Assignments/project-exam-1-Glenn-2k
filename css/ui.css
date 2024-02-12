@@ -163,6 +163,10 @@ main {
   max-height: 100%;
 }
 
+.info {
+  display: none;
+}
+
 .carouselButton {
   color: var(--button-orange);
   font-weight: 600;
