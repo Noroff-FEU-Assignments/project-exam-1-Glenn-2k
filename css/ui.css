@@ -427,7 +427,7 @@ textarea:focus {
 
 .contactForm input[type="submit"] {
   background-color: var(--button-orange);
-  color: var(--bg-main-colour);
+  color: black;
   opacity: 1;
   cursor: pointer;
   padding: 7px 10px;
@@ -450,7 +450,7 @@ label {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.7rem;
-  color: var(--bg-header-colour);
+  color: black;
   padding-top: 5px;
 }
 
