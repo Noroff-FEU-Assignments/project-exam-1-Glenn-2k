@@ -34,7 +34,6 @@ a {
   font-size: 1rem;
   color: #141310;
   text-transform: uppercase;
-  letter-spacing: 3px;
 }
 
 a.active {
@@ -135,7 +134,7 @@ footer {
 /* CAROUSEL & CARD / ABOUT PAGE */ /* MAIN PAGE & ABOUT */
 
 main {
-  margin-top: 250px;
+  margin: 250px 10px 0 10px;
 }
 
 .carouselCard {
