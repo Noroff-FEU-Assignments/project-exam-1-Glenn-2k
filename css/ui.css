@@ -148,7 +148,7 @@ main {
 }
 
 .carouselCardContent {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   width: 15rem;
   max-height: 180px;
@@ -157,11 +157,6 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-
-/* .carouselCardContent > * {
-  max-width: 100%;
-  max-height: 100%;
-} */
 
 .info {
   display: none;
