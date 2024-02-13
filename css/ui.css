@@ -369,7 +369,7 @@ main {
 .viewMorePostsBtn {
   padding: 10px 15px;
   margin-top: 20px;
-  color: var(--bg-secondary-colour);
+  color: black;
   cursor: pointer;
   background-color: var(--button-orange);
   border-radius: 9px;
