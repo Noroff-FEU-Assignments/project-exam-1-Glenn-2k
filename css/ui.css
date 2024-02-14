@@ -593,6 +593,11 @@ label {
   border: 1px solid var(--bg-header-colour);
 }
 
+#searchInput:hover {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
 #searchInput::placeholder {
   color: rgba(0, 0, 0, 0.2);
   font-weight: 700;
