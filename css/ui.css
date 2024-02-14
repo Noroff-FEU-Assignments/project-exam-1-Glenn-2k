@@ -582,7 +582,7 @@ label {
 #searchInput {
   font-size: 13px;
   font-weight: 500;
-  margin: 0 10px 30px 10px;
+  margin: 0 5px 30px 10px;
   padding: 5px 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -607,6 +607,13 @@ label {
 .searchBar {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.searchIcon {
+  width: 25px; /* margin-top: 5px; */
+  margin-bottom: 30px; /* margin-right: 5px; */
+  cursor: pointer;
 }
 
 /* SEARCH BAR */
