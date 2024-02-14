@@ -32,7 +32,7 @@ a {
 .nav-link {
   font-weight: 500;
   font-size: 1.2rem;
-  color: #141310;
+  color: var(--menu-text-colour);
   text-transform: uppercase;
 }
 
@@ -450,7 +450,7 @@ label {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.7rem;
-  color: black;
+  color: var(--menu-text-colour);
   padding-top: 5px;
 }
 
