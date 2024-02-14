@@ -12,11 +12,10 @@ header {
 .header-logo {
   max-width: 170px;
   transform: translateY(15%);
-  margin: auto;
 }
 
 .nav-logo {
-  font-family: "Rochester", Arial, Helvetica, sans-serif;
+  font-family: var(--small-heading-font);
   font-size: 4.5rem;
   justify-self: center;
 }
@@ -41,34 +40,40 @@ a.active {
 }
 
 .container,
-.subcontainer {
+.subcontainer,
+.header-logo {
   margin: auto;
 }
 
 .subcontainer {
   margin: 0 60px;
   display: grid;
-  align-items: center;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
+.subcontainer,
+.navbar,
+.nav-menu {
   align-items: center;
+}
+
+.navbar,
+.nav-menu {
+  display: flex;
+}
+
+.navbar {
+  justify-content: center;
   padding: 0 24px;
 }
 
 .nav-menu {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   column-gap: 18px;
 }
 
 .hamburger {
-  display: none;
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -92,7 +97,8 @@ a.active {
   justify-self: center;
 }
 
-.hidden {
+.hidden,
+.hamburger {
   display: none;
 }
 
@@ -102,8 +108,12 @@ a.active {
 
 /* FOOTER */
 
-footer {
+footer,
+.footerContainer {
   display: flex;
+}
+
+footer {
   margin-top: auto;
   flex-wrap: wrap;
   margin-top: auto;
@@ -111,7 +121,6 @@ footer {
 }
 
 .footerContainer {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -137,13 +146,17 @@ main {
   margin: 250px 10px 0 10px;
 }
 
+.carouselCard,
+.carouselCardContent {
+  display: flex;
+  flex-direction: column;
+}
+
 .carouselCard {
   width: 250px;
   height: 355px;
   margin: 0 15px;
-  border-radius: 0 0 8px 8px;
-  display: flex;
-  flex-direction: column;
+  border-radius: 8px;
   justify-content: space-between;
   background: white;
 }
@@ -152,6 +165,7 @@ main {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 .carouselCardContent {
@@ -159,8 +173,6 @@ main {
   text-align: center;
   width: 15rem;
   max-height: 180px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -231,7 +243,6 @@ main {
 
 .carouselSection {
   margin: 0 120px;
-  /* position: relative; */
 }
 
 .arrows {
@@ -255,7 +266,6 @@ main {
 
 .rightArrow,
 .leftArrow {
-  /* position: absolute; */
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -392,10 +402,7 @@ main {
 
 /* CONTACT PAGE */
 
-.headingContact {
-  margin-bottom: 20px;
-}
-
+.headingContact,
 .contactParagraph {
   margin-bottom: 20px;
 }
@@ -415,7 +422,8 @@ textarea {
 }
 
 .contactForm input:hover,
-textarea:hover {
+textarea:hover,
+.contactForm input[type="submit"]:hover {
   opacity: 0.8;
 }
 
@@ -427,7 +435,7 @@ textarea:focus {
 
 .contactForm input[type="submit"] {
   background-color: var(--button-orange);
-  color: black;
+  color: var(--menu-text-colour);
   opacity: 1;
   cursor: pointer;
   padding: 7px 10px;
@@ -442,7 +450,6 @@ textarea:focus {
   color: var(--button-orange);
   border: 2px dashed var(--button-orange);
   border-radius: 6px;
-  opacity: 0.8;
 }
 
 label {
@@ -467,23 +474,21 @@ label {
 
 /* BLOGSPECIFIC */
 
+.specificBlogSection,
+.blogContent {
+  display: flex;
+  flex-direction: column;
+}
+
 .specificBlogSection {
   margin: 0 120px;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
 .blogDate {
   font-size: 0.8rem;
   font-weight: 300;
   margin-bottom: 10px;
-  text-align: center;
-}
-
-.blogContent {
-  display: flex;
-  flex-direction: column;
 }
 
 .blogContent img {
@@ -492,7 +497,8 @@ label {
   margin: 20px;
 }
 
-.blogContent {
+.blogContent,
+.blogDate {
   text-align: center;
 }
 
@@ -552,15 +558,18 @@ label {
   font-size: 0.8rem;
   font-weight: 600;
   margin-top: 1px;
-  display: none;
   text-align: center;
   padding: 50px;
 }
 
 #loading {
-  display: none;
   justify-content: center;
   align-items: center;
+}
+
+#loading,
+#errorText {
+  display: none;
 }
 
 /* ERROR HANDLING and LOADING  */
