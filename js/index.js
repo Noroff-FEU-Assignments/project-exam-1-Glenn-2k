@@ -11,6 +11,7 @@ import {
   sliderFunction,
 } from "./ui/carousel.js";
 import { hamburgerMenu } from "./ui/toggleMobileNav.js";
+import { searchBar } from "./ui/searchBar.js";
 
 hamburgerMenu();
 
@@ -32,6 +33,7 @@ switch (window.location.pathname) {
   case "/blogs":
     dataHandler();
     viewMorePosts();
+    searchBar();
     break;
   case "/contact/index.html":
   case "/contact/":
