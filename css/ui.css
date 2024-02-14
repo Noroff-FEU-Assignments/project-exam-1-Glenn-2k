@@ -36,7 +36,8 @@ a {
 }
 
 a.active {
-  text-decoration: line-through;
+  color: var(--bg-main-colour);
+  transition: all 0.4s ease;
 }
 
 .container,
