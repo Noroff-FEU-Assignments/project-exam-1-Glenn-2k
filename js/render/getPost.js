@@ -50,6 +50,7 @@ export async function specificPost(post) {
       const modalImg = document.getElementById("modalImg");
       modal.style.display = "flex";
       modalImg.src = this.src;
+      modalImg.alt = this.alt;
     });
   });
 
