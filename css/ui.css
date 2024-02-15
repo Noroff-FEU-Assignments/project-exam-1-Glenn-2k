@@ -37,8 +37,8 @@ a {
 
 .nav-link.active,
 .nav-link:hover {
-  color: var(--bg-main-colour);
   transition: all 0.4s ease;
+  text-decoration: underline;
 }
 
 .container,
