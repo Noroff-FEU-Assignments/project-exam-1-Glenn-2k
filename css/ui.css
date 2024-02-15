@@ -223,7 +223,7 @@ main {
   margin: 0 auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* suggested by GTP for smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch; /* suggested by GPT for smooth scrolling on touch devices */
 }
 
 .carouselWrapper.active {
