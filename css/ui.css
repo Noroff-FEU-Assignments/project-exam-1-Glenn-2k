@@ -447,7 +447,7 @@ textarea:focus {
 
 .contactForm input[type="submit"] {
   background-color: var(--button-orange);
-  color: var(--menu-text-colour);
+  color: black;
   opacity: 1;
   cursor: pointer;
   padding: 7px 10px;
@@ -455,6 +455,8 @@ textarea:focus {
   margin-bottom: 30px;
   margin-top: 10px;
   transition: all 0.5s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .contactForm input[type="submit"]:hover {
