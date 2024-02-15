@@ -418,6 +418,12 @@ main {
   margin-bottom: 20px;
 }
 
+.contactFormContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .contactForm {
   margin-top: 20px;
   display: grid;
