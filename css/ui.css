@@ -611,8 +611,8 @@ label {
 }
 
 .searchIcon {
-  width: 25px; /* margin-top: 5px; */
-  margin-bottom: 30px; /* margin-right: 5px; */
+  width: 25px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
