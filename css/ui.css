@@ -581,6 +581,10 @@ label {
 /* SEARCH BAR */
 
 #searchInput {
+  background-image: url("../images/969259_magnifier_search_seo_magnifying_zoom_icon.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 20px 20px;
   font-size: 13px;
   font-weight: 500;
   margin: 0 0 30px 0;
